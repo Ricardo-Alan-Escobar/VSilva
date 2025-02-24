@@ -1,0 +1,58 @@
+---
+const logos = [
+  '/public/kfc.png',
+  '/public/maquirsa.png',
+  '/public/pizza.jpeg',
+  '/public/massey.jpeg',
+  '/public/ferre.png',
+  '/public/logo.png',
+];
+---
+
+<section class="w-full py-12 bg-white">
+  <div class="mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-8">Clientes y Socios</h2>
+    <div class="relative overflow-hidden">
+      <div class="flex animate-scroll">
+        {logos.concat(logos).concat(logos).map((logo, index) => (
+          <img
+            src={logo}
+            alt={`Logo ${index + 1}`}
+            class="h-26 object-contain"
+            style={{ flexShrink: 0 }}
+          />
+        ))}
+      </div>
+      <div class="flex animate-scroll absolute top-0 left-full">
+        {logos.concat(logos).concat(logos).map((logo, index) => (
+          <img
+            src={logo}
+            alt={`Logo ${index + 1}`}
+            class="h-26 object-contain"
+            style={{ flexShrink: 0 }}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes scroll {
+    0% {
+      transform: translateX(5);
+    }
+    100% {
+      transform: translateX(-15%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 25s linear infinite;
+    display: flex;
+  }
+
+  .animate-scroll img {
+    flex-shrink: 0;
+  }
+</style>

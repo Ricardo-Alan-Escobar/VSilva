@@ -1,0 +1,29 @@
+---
+--- 
+<head>
+    <script type="module" src="/scroll-global.js"></script>
+  </head>
+
+<style>
+    .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    .visible {
+      opacity: 1;
+    }
+  </style>
+  
+ 
+  <button id="scrollToTopBtn" class="scroll-to-top"><i class="fa-solid fa-chevron-up"></i></button>

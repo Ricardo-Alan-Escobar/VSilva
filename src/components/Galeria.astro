@@ -1,0 +1,80 @@
+---
+
+const projectsInstall = [
+  { id: 1, title: 'Smart Home Installation', image: '/public/programacion/Ecogas.png', category: 'Installation' },
+  { id: 2, title: 'Custom IoT Solution', image: '/placeholder.svg?height=300&width=400', category: 'Programming' },
+  { id: 3, title: 'Industrial Automation', image: '/placeholder.svg?height=300&width=400', category: 'Installation' },
+  { id: 4, title: 'Mobile App Development', image: '/placeholder.svg?height=300&width=400', category: 'Programming' },
+  { id: 5, title: 'Network Infrastructure Setup', image: '/placeholder.svg?height=300&width=400', category: 'Installation' },
+  { id: 6, title: 'AI-powered Analytics Dashboard', image: '/placeholder.svg?height=300&width=400', category: 'Programming' },
+];
+
+const projectsprograming = [
+  { id: 1, title: 'Pagina para empresa ecologica', image: '/public/programacion/Ecogas.png', category: 'Desarrollo de sitio web' },
+  { id: 2, title: 'Empresa de construcción', image: '/public/programacion/Maquirsa.png', category: 'Desarrollo de sitio web' },
+  { id: 3, title: 'Automatizacion de datos', image: '/public/programacion/masseyapp.jpeg', category: 'Desarrollo de aplicación' },
+  { id: 4, title: 'Pagina para universidad', image: '/public/programacion/neuuni.png', category: 'Desarrollo de sitio web' },
+  { id: 5, title: 'Aplicación tipo facebook para empresas', image: '/public/programacion/Proventis.png', category: 'Desarrollo de aplicación' },
+  { id: 6, title: 'Tarjeta de presentación digital', image: '/public/programacion/Tarjeta.png', category: 'Desarrollo de tarjeta de presentacion dijital con qr' },
+];
+---
+
+<div class="min-h-screen relative border border-white border-l-gray-900 bg-gradient-to-br py-28 from-gray-900 to-gray-800 text-white p-8">
+  <header class="max-w-6xl mx-auto mb-12">
+    <h1 class="text-4xl font-bold mb-4">Trabajos de Instalación</h1>
+    <p class="text-xl text-gray-300">Explora nuestros trabajos de instalacion realizados.</p>
+  </header>
+  <main class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {projectsInstall.map((projectsInstall) => (
+        <div class="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105">
+          <img
+            src={projectsInstall.image || "/placeholder.svg"}
+            alt={projectsInstall.title}
+            width={400}
+            height={300}
+            class="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="text-center">
+              <h2 class="text-2xl font-semibold mb-2 px-3">{projectsInstall.title}</h2>
+              <p class="text-gray-300 px-5">{projectsInstall.category}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </main>
+  <header class="max-w-6xl mx-auto pt-16 mb-12">
+    <h1 class="text-4xl font-bold mb-4">Trabajos de Programación</h1>
+    <p class="text-xl text-gray-300 px-5">Explora nuestros trabajos de programación realizados.</p>
+  </header>
+  <main class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {projectsprograming.map((projectsprograming) => (
+        <div class="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105">
+          <img
+            src={projectsprograming.image || "/placeholder.svg"}
+            alt={projectsprograming.title}
+            width={400}
+            height={300}
+            class="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="text-center">
+              <h2 class="text-2xl font-semibold mb-2 px-3">{projectsprograming.title}</h2>
+              <p class="text-gray-300 px-5">{projectsprograming.category}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </main>
+ 
+    
+    <svg class="absolute bottom-0 left-0 w-full h-auto pointer-events-none text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200,120 C1050,100 850,80 600,100 C350,120 150,90 0,100 L0,120 L1200,120 Z"></path>
+    </svg>
+
+</div>
+  

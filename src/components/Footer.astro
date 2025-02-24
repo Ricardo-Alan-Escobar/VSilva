@@ -1,0 +1,23 @@
+---
+import "../styles/global.css";
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="flex flex-col sm:flex-row py-5 w-full shrink-0 items-center justify-center sm:justify-between px-4 md:px-6 border-t flex-wrap sm:flex-nowrap space-y-0 sm:space-y-0">
+  
+  <p class="text-xs text-gray-500 text-center sm:text-left">© {currentYear} VSilva. Todos los derechos reservados.</p>
+
+  <div class="flex items-center justify-center space-x-2">
+    <p class="text-xs text-gray-500">Desarrollado por:</p> 
+    <img src="/public/logo.png" alt="Descripción de la imagen" class="h-20 w-32" />
+  </div>
+
+  <nav class="flex gap-4">
+    <a class="text-xs hover:underline underline-offset-4" href="/Terminos">Términos de Servicio</a>
+    <a class="text-xs hover:underline underline-offset-4" href="/Politicas">Política de Privacidad</a>
+  </nav>
+
+</footer>
+
+
+

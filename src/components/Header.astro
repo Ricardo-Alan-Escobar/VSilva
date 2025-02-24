@@ -1,0 +1,83 @@
+---
+import "../styles/global.css";
+---
+
+<head>
+  <script type="module" src="/scroll-header.js"></script>
+</head>
+
+<body>
+  <header id="header" class="header z-50 px-4 lg:px-6 h-14 flex items-center fixed w-full top-0 left-0">
+    <a href="/" class="flex items-center justify-center">
+      <i class="fa-solid fa-code-fork"></i>
+      <span class="ml-2 text-lg font-bold">VSilva</span>
+    </a>
+    <nav class="ml-auto flex gap-4 sm:gap-6">
+      <a class="text-sm font-medium group transition-colors duration-300 hover:text-blue-500" href="#services">
+        Sobre Nosotros
+        <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-blue-500"></span>
+      </a>
+      <a class="text-sm font-medium group transition-colors duration-300 hover:text-blue-500" href="/Trabajos">
+        Trabajos Realizados
+        <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-blue-500"></span>
+      </a>
+      <a class="text-sm font-medium group transition-colors duration-300 hover:text-blue-500" href="#contact">
+        Contacto
+        <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-blue-500"></span>
+      </a>
+      
+    </nav>
+    <button class="block lg:hidden ml-auto text-sm font-medium" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+  </header>
+
+  <style>
+    .header {
+      background-color: transparent;
+      color: white;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .header.scrolled {
+      background-color: white;
+      color: black;
+    }
+
+    nav {
+      display: none;
+    }
+
+    .open nav {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 4rem;
+      right: 1rem;
+      width: 90%;
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      z-index: 50;
+      color: black; /* Mantener las letras negras */
+    }
+
+    .open nav a {
+      color: black; /* Asegurarse de que los enlaces siempre sean negros */
+    }
+
+    @media (min-width: 1024px) {
+      nav {
+        display: flex;
+      }
+
+      .open nav {
+        display: none;
+      }
+
+      #menu-toggle {
+        display: none;
+      }
+    }
+  </style>
+
+  
+</body>

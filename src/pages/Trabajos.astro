@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import "../styles/global.css";
+import Galeria from '../components/Galeria.astro';
+import Scroll from '../components/Scroll.astro';
+---
+
+<Layout title="VSilva - Galeria de trabajos">
+  <Header />
+  <main>
+    <Galeria />
+    <Contact />
+    <Scroll />
+  </main>
+  <Footer />
+</Layout>
