@@ -1,8 +1,13 @@
+---
+import Banner from "./Img/banner-ti.jpg";
+---
+
+
 <section class="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 text-white">
   <!-- Imagen de fondo con efecto de tonalidad y oscurecimiento -->
   <div class="absolute inset-0 bg-black/50"></div>
   
-  <div class="absolute inset-0 bg-cover bg-center brightness-50 " style="background-image: url('/public/banner ti.jpg');"></div>
+  <div class="absolute inset-0 bg-cover bg-center brightness-50 " style={`background-image: url(${Banner.src});`}></div>
 
   <div class="container px-4 md:px-6 mx-auto relative z-10">
     <div class="flex flex-col items-center space-y-4 text-center">

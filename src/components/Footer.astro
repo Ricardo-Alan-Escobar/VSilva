@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 const currentYear = new Date().getFullYear();
+import Logo from "./Img/logo.png";
 ---
 
 <footer class="flex flex-col sm:flex-row py-5 w-full shrink-0 items-center justify-center sm:justify-between px-4 md:px-6 border-t flex-wrap sm:flex-nowrap space-y-0 sm:space-y-0">
@@ -9,7 +10,7 @@ const currentYear = new Date().getFullYear();
 
   <div class="flex items-center justify-center space-x-2">
     <p class="text-xs text-gray-500">Desarrollado por:</p> 
-    <img src="/public/logo.png" alt="Descripción de la imagen" class="h-20 w-32" />
+    <img src={Logo.src} alt="Descripción de la imagen" class="h-20 w-32" />
   </div>
 
   <nav class="flex gap-4">
