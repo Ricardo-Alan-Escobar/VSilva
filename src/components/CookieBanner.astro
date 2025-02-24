@@ -1,0 +1,42 @@
+---
+const cookiesAccepted = Astro.cookies.get('cookiesAccepted');
+---
+
+{!cookiesAccepted && (
+  <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4 flex justify-between items-center z-50">
+    <div class="text-sm">
+      <p>
+        Este sitio web usa cookies para mejorar la experiencia de usuario. 
+        Al continuar navegando, aceptas el uso de cookies.
+      </p>
+    </div>
+    <button
+      id="accept-cookies"
+      class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+    >
+      Aceptar
+    </button>
+  </div>
+)}
+
+<script>
+  // Esperar a que el DOM se haya cargado completamente
+  document.addEventListener('DOMContentLoaded', function() {
+    const acceptButton = document.getElementById('accept-cookies');
+
+    if (acceptButton) {
+      acceptButton.addEventListener('click', acceptCookies);
+    }
+
+    function acceptCookies() {
+      // Comprobamos que el banner no sea null
+      const banner = document.getElementById('cookie-banner');
+      if (banner) {
+        banner.style.display = 'none';  // Ocultar el banner
+      }
+
+      // Establecer la cookie para recordar la aceptación
+      document.cookie = "cookiesAccepted=true; path=/; max-age=" + 60 * 60 * 24 * 365;  // Expira en 1 año
+    }
+  });
+</script>

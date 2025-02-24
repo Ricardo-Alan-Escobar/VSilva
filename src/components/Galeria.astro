@@ -8,11 +8,11 @@ import Tarjeta from "./Img/programacion/Tarjeta.png";
 
 const projectsInstall = [
   { id: 1, title: 'Smart Home Installation', image: Ecogas.src, category: 'Installation' },
-  { id: 2, title: 'Custom IoT Solution', image: '/placeholder.svg?height=300&width=400', category: 'Programming' },
-  { id: 3, title: 'Industrial Automation', image: '/placeholder.svg?height=300&width=400', category: 'Installation' },
-  { id: 4, title: 'Mobile App Development', image: '/placeholder.svg?height=300&width=400', category: 'Programming' },
-  { id: 5, title: 'Network Infrastructure Setup', image: '/placeholder.svg?height=300&width=400', category: 'Installation' },
-  { id: 6, title: 'AI-powered Analytics Dashboard', image: '/placeholder.svg?height=300&width=400', category: 'Programming' },
+  { id: 2, title: 'Custom IoT Solution', image: Ecogas.src, category: 'Programming' },
+  { id: 3, title: 'Industrial Automation', image: Ecogas.src, category: 'Installation' },
+  { id: 4, title: 'Mobile App Development', image: Ecogas.src, category: 'Programming' },
+  { id: 5, title: 'Network Infrastructure Setup', image: Ecogas.src, category: 'Installation' },
+  { id: 6, title: 'AI-powered Analytics Dashboard', image: Ecogas.src, category: 'Programming' },
 ];
 
 const projectsprograming = [
@@ -25,7 +25,7 @@ const projectsprograming = [
 ];
 ---
 
-<div class="min-h-screen relative border border-white border-l-gray-900 bg-gradient-to-br py-28 from-gray-900 to-gray-800 text-white p-8">
+<div class="min-h-screen relative border border-white border-l-gray-900 border-r-gray-900 border-t-gray-900 bg-gradient-to-br py-28 from-gray-900 to-gray-800 text-white p-8">
   <header class="max-w-6xl mx-auto mb-12">
     <h1 class="text-4xl font-bold mb-4">Trabajos de Instalación</h1>
     <p class="text-xl text-gray-300">Explora nuestros trabajos de instalacion realizados.</p>
@@ -35,7 +35,7 @@ const projectsprograming = [
       {projectsInstall.map((projectsInstall) => (
         <div class="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105">
           <img
-            src={projectsInstall.image || "/placeholder.svg"}
+            src={projectsInstall.image}
             alt={projectsInstall.title}
             width={400}
             height={300}
@@ -60,7 +60,7 @@ const projectsprograming = [
       {projectsprograming.map((projectsprograming) => (
         <div class="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105">
           <img
-            src={projectsprograming.image || "/placeholder.svg"}
+            src={projectsprograming.image}
             alt={projectsprograming.title}
             width={400}
             height={300}
