@@ -1,13 +1,14 @@
 ---
 import "../styles/global.css";
+
  
 const services = [
-  { icon: 'fa-solid fa-network-wired fa-3x text-blue-400', title: 'Redes', description: 'Diseño e implementación de infraestructuras de red seguras y eficientes.' },
-  { icon: 'fa-solid fa-code fa-3x text-green-400', title: 'Programación', description: 'Desarrollo de software a medida para optimizar tus procesos de negocio.' },
-  { icon: 'fa-solid fa-headset fa-3x text-purple-400', title: 'Soporte IT', description: 'Asistencia técnica 24/7 para mantener tu infraestructura funcionando sin problemas.' },
-  { icon: 'fa-solid fa-lightbulb fa-3x text-yellow-300', title: 'Consultoría', description: 'Asesoramiento experto para alinear la tecnología con tus objetivos empresariales.' },
-  { icon: 'fa-solid fa-video fa-3x text-red-400', title: 'Instalaciones', description: 'Montaje y configuración de equipos y sistemas para tu empresa.' },
-  { icon: 'fa-solid fa-chart-line fa-3x text-orange-400', title: 'CONTPAQi', description: 'Consultoría y soporte especializado en Contpaqi, incluyendo asesoramiento, optimización de procesos y venta del producto.' },
+  { icon: 'fa-solid fa-network-wired fa-3x text-blue-400', title: 'Redes', description: 'Diseño e implementación de infraestructuras de red seguras y eficientes.', link: '/Servicios#Redes' },
+  { icon: 'fa-solid fa-code fa-3x text-green-400', title: 'Programación', description: 'Desarrollo de software a medida para optimizar tus procesos de negocio.', link: '/Servicios#Programacion' },
+  { icon: 'fa-solid fa-headset fa-3x text-purple-400', title: 'Soporte IT', description: 'Asistencia técnica 24/7 para mantener tu infraestructura funcionando sin problemas.', link: '/Servicios#Soporte' },
+  { icon: 'fa-solid fa-lightbulb fa-3x text-yellow-300', title: 'Consultoría', description: 'Asesoramiento experto para alinear la tecnología con tus objetivos empresariales.', link: '/Servicios#Consultoria' },
+  { icon: 'fa-solid fa-video fa-3x text-red-400', title: 'Instalaciones', description: 'Montaje y configuración de equipos y sistemas para tu empresa.', link: '/Servicios#Instalaciones' },
+  { icon: 'fa-solid fa-chart-line fa-3x text-orange-400', title: 'CONTPAQi', description: 'Consultoría y soporte especializado en Contpaqi, incluyendo asesoramiento, optimización de procesos y venta del producto.', link: '/Servicios#CONTPAQi' },
 ];
 ---
 
@@ -20,6 +21,9 @@ const services = [
           <i class={service.icon}></i>
           <h3 class="text-xl font-bold my-2 mt-5">{service.title}</h3>
           <p class="text-gray-600">{service.description}</p>
+          <a href={service.link} class="mt-4 bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition">
+           <strong> Ver más</strong>
+          </a>
         </div>
       ))}
       

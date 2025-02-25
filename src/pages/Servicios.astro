@@ -1,0 +1,278 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import "../styles/global.css";
+import Scroll from '../components/Scroll.astro';
+
+---
+
+<Layout title="VSilva - Galeria de trabajos">
+  <Header />
+  <main>
+    <section class="bg-gray-900 pt-28 py-10">
+        <div class="container mx-auto">
+            <div class="border border-white p-5 rounded-xl w-full sm:w-3/4 md:w-1/2 lg:w-1/4 mx-auto">
+                <h2 class="text-4xl text-white text-center font-bold">Nuestros Servicios</h2>
+                <p class="text-white text-center text-lg mt-5">Conoce los servicios que ofrecemos</p>
+            </div>
+        </div>
+        
+
+        <div id="Programacion" class="mt-20 p-10 scroll-mt-5">
+            <h1 class="text-red-400 text-2xl font-bold">Servicios de Programación</h1>
+            <p class="text-red-200 text-lg">
+                Creamos soluciones digitales a medida, desde sitios web hasta aplicaciones móviles, 
+                utilizando tecnologías modernas para garantizar un rendimiento óptimo y una excelente experiencia de usuario.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-6">
+                
+                <!-- Servicio: Sitios Web -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Diseño y Desarrollo de Sitios Web</h3>
+                    <p class="text-white mt-5">
+                        Creación de páginas web personalizadas con un diseño moderno y profesional.  
+                        Desarrollamos sitios optimizados para SEO, con navegación intuitiva y adaptables a todos los dispositivos.  
+                        Perfecto para negocios, blogs, portafolios y más.
+                    </p>
+                </div>
+                
+                <!-- Servicio: Aplicaciones Web -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Aplicaciones Web Interactivas</h3>
+                    <p class="text-white mt-5">
+                        Desarrollo de plataformas web avanzadas, desde paneles administrativos hasta herramientas en línea.  
+                        Utilizamos tecnologías modernas como React, Vue.js, Laravel, y más para ofrecer soluciones eficientes y escalables.
+                    </p>
+                </div>
+                
+                <!-- Servicio: Aplicaciones Móviles -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Desarrollo de Aplicaciones Móviles</h3>
+                    <p class="text-white mt-5">
+                        Creación de apps nativas y multiplataforma (Android e iOS) con tecnología como React Native o Flutter.  
+                        Aplicaciones optimizadas para rendimiento, seguridad y facilidad de uso, ideales para empresas, emprendimientos o servicios.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        
+
+
+        <div id="Redes" class="mt-5 p-10 scroll-mt-5">
+            <h1 class="text-green-400 text-2xl font-bold text-end">Servicios de Redes</h1>
+            <p class="text-green-200 text-lg text-end">
+                Diseño, configuración y optimización de redes para garantizar una conexión estable, segura y eficiente.  
+                Ofrecemos soluciones personalizadas para empresas y hogares.
+            </p>
+        
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-6">
+                
+                <!-- Diseño e Implementación de Redes -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Diseño e Implementación de Redes</h3>
+                    <p class="text-white mt-5">
+                        Planificación y configuración de infraestructuras de red, asegurando una conectividad eficiente.  
+                        Instalamos redes alámbricas e inalámbricas para empresas, oficinas y hogares, con seguridad optimizada.
+                    </p>
+                </div>
+        
+                <!-- Configuración y Mantenimiento de Redes -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Configuración y Mantenimiento</h3>
+                    <p class="text-white mt-5">
+                        Instalación y ajuste de routers, switches y otros dispositivos de red.  
+                        Optimizamos el rendimiento y solucionamos problemas de conexión, garantizando estabilidad y velocidad.
+                    </p>
+                </div>
+        
+                <!-- Conexión Punto a Punto (P2P) -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Conexión Punto a Punto (P2P)</h3>
+                    <p class="text-white mt-5">
+                        Establecimiento de enlaces directos entre dos ubicaciones para una comunicación rápida y segura.  
+                        Solución ideal para empresas que necesitan compartir datos sin intermediarios.
+                    </p>
+                </div>
+        
+            </div>
+        </div>
+        
+
+
+        <div id="Instalaciones" class="mt-5 p-10 scroll-mt-5">
+            <h1 class="text-blue-400 text-2xl font-bold">Servicios de Instalaciones</h1>
+            <p class="text-blue-200 text-lg">
+                Instalación profesional de cámaras de seguridad, cableado estructurado, antenas Starlink y más.  
+                Garantizamos un servicio eficiente y adaptado a tus necesidades.
+            </p>
+        
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-6">
+        
+                <!-- Instalación de Cámaras de Seguridad -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Cámaras de Seguridad</h3>
+                    <p class="text-white mt-5">
+                        Instalación y configuración de sistemas de videovigilancia con cámaras de alta definición.  
+                        Monitoreo en tiempo real y grabación segura para hogares, negocios y oficinas.
+                    </p>
+                </div>
+        
+                <!-- Cableado Estructurado -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Cableado Estructurado</h3>
+                    <p class="text-white mt-5">
+                        Instalación de redes de datos con cableado estructurado para una conexión estable y eficiente.  
+                        Ideal para oficinas, empresas y hogares con múltiples dispositivos conectados.
+                    </p>
+                </div>
+        
+                <!-- Instalación de Antenas Starlink -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Antenas Starlink</h3>
+                    <p class="text-white mt-5">
+                        Montaje y configuración de antenas Starlink para garantizar internet de alta velocidad en zonas remotas.  
+                        Optimizamos la ubicación y el rendimiento para una mejor conectividad.
+                    </p>
+                </div>
+        
+            </div>
+        </div>
+        
+
+        <div id="CONTPAQi" class="mt-5 p-10 scroll-mt-5">
+            <h1 class="text-amber-400 text-2xl font-bold text-end">CONTPAQi</h1>
+            <p class="text-amber-200 text-lg text-end">
+                Consultoría y soporte especializado en CONTPAQi. Te ayudamos con la instalación, configuración, optimización de procesos 
+                contables y administrativos, además de la venta de licencias y productos.
+            </p>
+        
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-6">
+        
+                <!-- Venta de Licencias CONTPAQi -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Venta de Licencias</h3>
+                    <p class="text-white mt-5">
+                        Comercialización de licencias originales de CONTPAQi, garantizando que obtengas la versión adecuada según tus necesidades 
+                        contables, fiscales y administrativas.
+                    </p>
+                </div>
+        
+                <!-- Instalación y Configuración -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Instalación y Configuración</h3>
+                    <p class="text-white mt-5">
+                        Implementación y configuración de CONTPAQi para optimizar su funcionamiento en tu empresa.  
+                        Te ayudamos a personalizarlo para que se adapte a tus flujos de trabajo.
+                    </p>
+                </div>
+        
+                <!-- Soporte y Capacitación -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Soporte y Capacitación</h3>
+                    <p class="text-white mt-5">
+                        Asesoramiento técnico para resolver problemas con CONTPAQi y capacitación para que tu equipo 
+                        aproveche al máximo sus herramientas y funcionalidades.
+                    </p>
+                </div>
+        
+            </div>
+        </div>
+        
+
+
+        <div id="Soporte" class="mt-5 p-10 scroll-mt-5">
+            <h1 class="text-blue-400 text-2xl font-bold">Servicios de Soporte IT</h1>
+            <p class="text-blue-200 text-lg">
+                Asistencia técnica 24/7 para mantener tu infraestructura funcionando sin problemas. 
+                Ofrecemos soluciones rápidas y eficientes para empresas y negocios.
+            </p>
+        
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-6">
+        
+                <!-- Soporte Remoto y Presencial -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Soporte Remoto y Presencial</h3>
+                    <p class="text-white mt-5">
+                        Diagnóstico y resolución de problemas de hardware y software, ya sea de forma remota o en sitio, 
+                        asegurando la continuidad operativa de tu empresa.
+                    </p>
+                </div>
+        
+                <!-- Mantenimiento Preventivo y Correctivo -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Mantenimiento Preventivo y Correctivo</h3>
+                    <p class="text-white mt-5">
+                        Revisión y optimización de equipos para evitar fallos inesperados, 
+                        garantizando un rendimiento óptimo de tu infraestructura tecnológica.
+                    </p>
+                </div>
+        
+                <!-- Seguridad y Protección de Datos -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Seguridad y Protección de Datos</h3>
+                    <p class="text-white mt-5">
+                        Implementación de estrategias de seguridad informática, backups automatizados 
+                        y protección contra amenazas cibernéticas para mantener tu información segura.
+                    </p>
+                </div>
+        
+            </div>
+        </div>
+        
+
+
+
+        <div id="Consultoria" class="mt-20 p-10 scroll-mt-5">
+            <h1 class="text-amber-400 text-2xl font-bold text-end">Servicios de Consultoría</h1>
+            <p class="text-amber-200 text-lg text-end">
+                Asesoramiento experto para optimizar procesos, mejorar la infraestructura tecnológica 
+                y alinear la tecnología con tus objetivos empresariales.
+            </p>
+        
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-6">
+        
+                <!-- Consultoría en Transformación Digital -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Transformación Digital</h3>
+                    <p class="text-white mt-5">
+                        Identificamos oportunidades para modernizar y digitalizar tu empresa, 
+                        mejorando la eficiencia y la competitividad en el mercado.
+                    </p>
+                </div>
+        
+                <!-- Optimización de Infraestructura TI -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Optimización de Infraestructura TI</h3>
+                    <p class="text-white mt-5">
+                        Evaluamos y mejoramos tu infraestructura tecnológica para asegurar 
+                        un rendimiento óptimo y una mejor administración de recursos.
+                    </p>
+                </div>
+        
+                <!-- Consultoría en Seguridad Informática -->
+                <div class="bg-gray-800 p-5 rounded-xl">
+                    <h3 class="text-white text-2xl font-bold">Seguridad Informática</h3>
+                    <p class="text-white mt-5">
+                        Implementamos estrategias de ciberseguridad, prevención de ataques y 
+                        planes de recuperación ante desastres para proteger tu información.
+                    </p>
+                </div>
+        
+            </div>
+        </div>
+        
+
+
+
+        </div>
+
+
+    </section>
+    <Scroll />
+  </main>
+  <Footer />
+</Layout>
