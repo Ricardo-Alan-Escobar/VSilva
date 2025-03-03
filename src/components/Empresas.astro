@@ -26,6 +26,7 @@ const logos = [
             src={logo}
             alt={`Logo ${index + 1}`}
             class="h-26 object-contain"
+            decoding="async" loading="lazy"
             style={{ flexShrink: 0 }}
           />
         ))}
@@ -35,6 +36,7 @@ const logos = [
           <img
             src={logo}
             alt={`Logo ${index + 1}`}
+            decoding="async" loading="lazy"
             class="h-26 object-contain"
             style={{ flexShrink: 0 }}
           />

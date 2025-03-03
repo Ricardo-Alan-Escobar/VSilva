@@ -20,7 +20,7 @@ const specialists = [
     <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       {specialists.map(specialist => (
         <div class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-lg">
-          <img src={specialist.image} alt={specialist.name} class="w-32 h-32 object-cover rounded-full border-4 border-blue-500 mb-4 shadow-md" />
+          <img src={specialist.image} alt={specialist.name} decoding="async" loading="lazy" class="w-32 h-32 object-cover rounded-full border-4 border-blue-500 mb-4 shadow-md" />
           <h3 class="text-xl font-bold mb-2">{specialist.name}</h3>
           <p class="text-blue-600 mb-2">{specialist.role}</p>
           <p class="text-gray-500">{specialist.expertise}</p>
