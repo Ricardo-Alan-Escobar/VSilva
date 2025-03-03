@@ -2,6 +2,7 @@
 import Innovation from "./Img/Innovation.png";
 import Compromiso from "./Img/Compromiso.png";
 import Excelencia from "./Img/Excelencia.png";
+import { Image } from "astro:assets";
 ---
 
 
@@ -17,7 +18,7 @@ import Excelencia from "./Img/Excelencia.png";
    
   <div class="mt-12 grid pb-10 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
     <div class="bg-white text-gray-900 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 text-center">
-      <img src={Innovation.src} alt="Innovación" class="w-40 h-32 mx-auto mb-4 rounded-b-full">
+      <Image src={Innovation} alt="Innovación" width={160} height={128} class="w-40 h-32 mx-auto mb-4 rounded-b-full" />
       <h3 class="text-2xl font-bold">Innovación</h3>
       <p class="mt-2 text-gray-600">Buscamos siempre nuevas formas de mejorar y evolucionar en el mundo tecnológico.</p>
     </div>
